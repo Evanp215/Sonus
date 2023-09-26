@@ -2,3 +2,36 @@
   padding: 0;
   margin: 0;
 }
+body {
+  background-color: #EAEBEB;
+}
+@keyframes expand {
+  100% {width: 80vw;}
+}
+header {
+  display: flex;
+  background-color: #2D3142;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 20vw;
+  min-width: 250px;
+  border-radius: 45px;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+header:hover {
+  animation-name: expand;
+  animation-duration: .6s;
+  animation-fill-mode: forwards;
+}
+header > h1 {
+  color: #EF8354;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 46px;
+  font-weight: 800;
+}
