@@ -5,23 +5,8 @@
 body {
   background-color: #EAEBEB;
 }
-@keyframes expand {
-  from {width: 24vw; background-color: #2D3142;}
-  to {width: 80vw; background-color: #EAEBEB;}
-}
-@keyframes retract {
-  1% {width: 80vw;background-color: #EAEBEB;}
-  80% {width: 80vw;background-color: #EAEBEB;}
-  100% {width: 24vw; background-color: #2D3142;}
-}
-.menu-item {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  width: 80px;
-  font-size: 20px;
-  text-decoration: none;
-  color: #2D3142;
-  font-weight: 800;
-}
+
+/* Header Styles */
 header {
   position: fixed;
   top:50px;
@@ -34,30 +19,44 @@ header {
   justify-content: center;
   padding: 20px;
 }
+@keyframes expand {
+  from {width: 50vw; background-color: #2D3142;}
+  to {width: 90vw; background-color: #EAEBEB;}
+}
 #menu {
   display: flex;
   background-color: #2D3142;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 80px;
-  width: 80vw;
-  min-width: 250px;
+  height: 8.5vh;
+  width: 50vw;
   border-radius: 45px;
-  color: #2D3142 ;
-  animation-name: retract;
-  animation-duration: 2.5s;
-  animation-fill-mode:forwards;
+  color: #2D3142;
 }
-
 #menu:hover {
   animation-name: expand;
-  animation-duration: .6s;
+  animation-duration: .4s;
   animation-fill-mode: forwards;
 }
 #menu > h1 {
   color: #EF8354;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 46px;
+  font-size: 3.5vw;
   font-weight: 800;
 }
+.menu-item {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 8vw;
+  font-size: 1.8vw;
+  text-decoration: none;
+  color: #2D3142;
+  font-weight: 600;
+  text-align: center;
+  border: 2px solid #2D3142;
+  border-radius: 25px;
+}
+.menu-item:hover {
+  background-color: #EF8354;
+}
+/* ^ Header Styles ^*/
